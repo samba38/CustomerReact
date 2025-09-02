@@ -33,10 +33,10 @@ const CustomerFormPage=()=>{
             },
             body: JSON.stringify(newCustomer),
         };
-        const API_URL =
-    process.env.REACT_APP_API_URL || "https://customerserver-10.onrender.com";
+        const API_BASE = process.env.REACT_APP_API_BASE_URL;
 
-        let apiUrl=`${API_URL}/api/customers`
+
+        let apiUrl=`${API_BASE}/api/customers`
         const response= await fetch(apiUrl, options)
         if (response.ok===true){
           const fetchData= await response.json()

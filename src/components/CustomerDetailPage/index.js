@@ -7,16 +7,16 @@ const CustomerDetailPage=(props)=>{
   const [customer, setCustomer]=useState({})
   const [addresses, setAddresses]=useState([])
   const [deleteError, setDeleteError]=useState('')
-  const API_URL =
-    process.env.REACT_APP_API_URL || "https://customerserver-10.onrender.com";
+  const API_BASE = process.env.REACT_APP_API_BASE_URL;
+
   useEffect(()=>{
     const getCustomerData=async ()=>{
       const { match } = props;
       const { id } = match.params;
       
 
-      const apiUrl=`${API_URL}/api/customers/${id}`
-      const apiUrl2=`${API_URL}/api/customers/${id}/addresses`
+      const apiUrl=`${API_BASE}/api/customers/${id}`
+      const apiUrl2=`${API_BASE}/api/customers/${id}/addresses`
       const response= await fetch(apiUrl)
       const fetchData= await response.json()
       const response2= await fetch(apiUrl2)
@@ -42,7 +42,7 @@ const CustomerDetailPage=(props)=>{
     getCustomerData()
   }, [])
   const onDelete=async (id)=>{
-    const api=`${API_URL}/api/customers/${id}`
+    const api=`${API_BASE}/api/customers/${id}`
     const options={
       method:'DELETE'
     }

@@ -11,8 +11,9 @@ const CustomersAddressEditForm=(props)=>{
     const {match}=props 
     const {params}=match 
     const {id}=params 
-    const API_URL =
-    process.env.REACT_APP_API_URL || "https://customerserver-10.onrender.com";
+    
+    const API_BASE = process.env.REACT_APP_API_BASE_URL;
+
   const onChnageAdress=(event)=>{
     setAddressDetails(event.target.value)
   }
@@ -44,7 +45,7 @@ const CustomersAddressEditForm=(props)=>{
             },
             body: JSON.stringify(updateAdress),
         };
-        const apiUrl=`${API_URL}/api/addresses/${id}`
+        const apiUrl=`${API_BASE}/api/addresses/${id}`
        const response= await fetch(apiUrl, options)
     if (response.ok===true){
      const fetchData= await response.text()
