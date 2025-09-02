@@ -1,0 +1,62 @@
+
+@media (max-width:480px){
+    
+.customer-adress-details{
+    color: #F44336;
+    font-family:Roboto;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.customer-adress{
+    color: #37474F;
+    font-family:Roboto;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.customer-adress-state{
+    color: #37474F;
+    font-family:Roboto;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.customer-adress-state-span{
+    color: #5D4037;
+    font-family:Roboto;
+    font-size: 20px;
+    font-weight: 500;
+}
+}
+
+@media (min-width:1024px){
+    
+.customer-adress-details{
+    color: #F44336;
+    font-family:Roboto;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.customer-adress{
+    color: #37474F;
+    font-family:Roboto;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.customer-adress-state{
+    color: #37474F;
+    font-family:Roboto;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.customer-adress-state-span{
+    color: #5D4037;
+    font-family:Roboto;
+    font-size: 20px;
+    font-weight: 500;
+}
+}

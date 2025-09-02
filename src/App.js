@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import CustomerList from './components/CustomerList'
+import CustomerDetailPage from './components/CustomerDetailPage'
+import CustomerFormPage from './components/CustomerFormPage'
+import CustomerEditForm from './components/CustomerEditForm'
+import CustomersAddressEditForm from './components/CustomersAddressEditForm'
+import CustomerAddressNewForm from './components/CustomerAddressNewForm'
+import NotFound from './components/NotFound'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+     <Switch>
+       <Route exact path='/' component={CustomerList}/>
+       <Route exact path="/api/customers/:id" component={CustomerDetailPage} />
+       <Route exact path='/api/customers' component={CustomerFormPage}/>
+       <Route exact path='/api/edit-customer/:id' component={CustomerEditForm}/>
+       <Route exact path='/api/edit-address/:id' component={CustomersAddressEditForm}/>
+       <Route exact path='/api/add-new-address/:id' component={CustomerAddressNewForm}/>
+       <Route component={NotFound}/>
+     </Switch>
+    </BrowserRouter>
   );
 }
 

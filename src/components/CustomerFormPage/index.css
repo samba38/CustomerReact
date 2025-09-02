@@ -1,0 +1,148 @@
+
+@media (max-width:480px){
+    
+
+   .form-conatiner {
+   background: #ffffff;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+   height: 480px; 
+   width: 400px;  
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-add{
+    height: 25px;
+    width: 200px;
+}
+
+.label-input{
+    color: #263238;
+    font-size: 18px;
+    font-family: Roboto;
+}
+
+.create-customer-form-btn{
+    background-color: #E65100;
+    height: 35px;
+    width: 90px;
+    color: white;
+    border-radius: 10px;
+    border-width: 0px;
+    margin: 10px;
+}
+
+.error-form{
+    color: #E65100;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.api-details-form{
+    color: green;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.adding-customer{
+    color: #37474F;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
+    text-align: center;
+}
+
+.given-details-new{
+    color: #37474F;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+}
+
+@media (min-width:1024px){
+    .form-conatiner {
+   max-width: 400px;
+   margin: 60px auto;
+   padding: 24px;
+   background: #ffffff;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+   height: 420px; 
+   width: 380px;  
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.input-add{
+    height: 30px;
+    width: 200px;
+}
+
+.label-input{
+    color: #263238;
+    font-size: 18px;
+    font-family: Roboto;
+}
+
+.create-customer-form-btn{
+    background-color: #E65100;
+    height: 35px;
+    width: 95px;
+    color: white;
+    border-radius: 10px;
+    border-width: 0px;
+    margin: 10px;
+}
+
+.error-form{
+    color: #E65100;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.api-details-form{
+    color: green;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.adding-customer{
+    color: #37474F;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 10px;
+    text-align: center;
+}
+
+.given-details-new{
+    color: #37474F;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+}

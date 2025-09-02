@@ -1,0 +1,130 @@
+
+@media (max-width:480px){
+    .customer-full-details{
+    display: flex;
+    padding: 50px;
+    height: 150vh;
+    width: 120vw;
+    
+}
+
+.adress-img{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+.customer-details-card{
+    padding: 8px;
+}
+
+.customer-name-heading{
+    color: #37474F;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.customer-phone-number{
+    color: #37474F;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.customer-phone-number-span{
+    color: #263238;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.buttons-card{
+    display: flex;
+}
+
+.customer-edit-btn{
+    background-color: #E65100;
+    height: 45px;
+    width: 120px;
+    color: white;
+    border-radius: 10px;
+    border-width: 0px;
+    margin: 10px;
+    
+    
+}
+.customer-delete-btn{
+    background-color: transparent;
+    height: 45px;
+    width: 120px;
+    color: #37474F;
+    border-radius: 10px;
+    border: 1px solid #E65100;
+    margin: 10px;
+    
+    
+}
+}
+
+@media (min-width:1024px){
+    .customer-full-details{
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+
+.adress-img{
+    height: 200px;
+    width: 200px;
+    margin-right: 40px;
+}
+.customer-details-card{
+    padding: 10px;
+}
+
+.customer-name-heading{
+    color: #37474F;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.customer-phone-number{
+    color: #37474F;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.customer-phone-number-span{
+    color: #263238;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.buttons-card{
+    display: flex;
+}
+
+.customer-edit-btn{
+    background-color: #E65100;
+    height: 35px;
+    width: 150px;
+    color: white;
+    border-radius: 10px;
+    border-width: 0px;
+    margin: 10px;
+    
+}
+.customer-delete-btn{
+    background-color: transparent;
+    height: 35px;
+    width: 150px;
+    color: #37474F;
+    border-radius: 10px;
+    border: 1px solid #E65100;
+    margin: 10px;
+    
+}
+}
