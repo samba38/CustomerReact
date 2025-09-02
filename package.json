@@ -10,7 +10,7 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^5.3.4",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -37,8 +37,15 @@
       "last 1 safari version"
     ]
   },
+  "extends": [
+  "airbnb",
+  "prettier"
+],
   "engines": {
     "node": ">=20.0.0",
     "npm": ">=8"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0"
   }
 }
