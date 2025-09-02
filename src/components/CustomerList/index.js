@@ -31,7 +31,9 @@ const CustomerList=()=>{
   useEffect(()=>{
     const getCustomerData = async () => {
       setApiResponse(apiStatusConstants.inProgress)
-      const apiUrl=`https://customerserver-10.onrender.com/api/customers?page=${page}&order_by=${orderBy}&search_q=${search}`
+      const API_URL = process.env.REACT_APP_API_URL || "https://customerserver-10.onrender.com";
+
+const apiUrl = `${API_URL}/api/customers?page=${page}&order_by=${orderBy}&search_q=${search}`;
       const response= await fetch(apiUrl)
       if (response.ok===true){
         const fetchData= await response.json()

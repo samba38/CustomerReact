@@ -42,7 +42,9 @@ const CustomerAddressNewForm=(props)=>{
             },
             body: JSON.stringify(updateAdress),
         };
-        const apiUrl=`https://customerserver-10.onrender.com/api/customers/${id}/addresses`
+        const API_URL =
+    process.env.REACT_APP_API_URL || "https://customerserver-10.onrender.com";
+        const apiUrl=`${API_URL}/api/customers/${id}/addresses`
        const response= await fetch(apiUrl, options)
     if (response.ok===true){
      const fetchData= await response.text()
