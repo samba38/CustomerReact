@@ -41,7 +41,7 @@ const CustomerEditForm=(props)=>{
             },
             body: JSON.stringify(updateCustomer),
         };
-        const apiUrl=`https://customerserver-6.onrender.com/api/customers/${id}`
+        const apiUrl=`https://customerserver-10.onrender.com/customers/${id}`
         const response= await fetch(apiUrl, options)
         if (response.ok===true){
           const fetchData= await response.json()

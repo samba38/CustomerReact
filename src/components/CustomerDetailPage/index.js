@@ -11,8 +11,8 @@ const CustomerDetailPage=(props)=>{
     const getCustomerData=async ()=>{
       const { match } = props;
       const { id } = match.params;  
-      const apiUrl=`https://customerserver-6.onrender.com/api/customers/${id}`
-      const apiUrl2=`https://customerserver-6.onrender.com/api/customers/${id}/addresses`
+      const apiUrl=`https://customerserver-10.onrender.com/api/customers/${id}`
+      const apiUrl2=`https://customerserver-10.onrender.com/api/customers/${id}/addresses`
       const response= await fetch(apiUrl)
       const fetchData= await response.json()
       const response2= await fetch(apiUrl2)
@@ -38,7 +38,7 @@ const CustomerDetailPage=(props)=>{
     getCustomerData()
   }, [])
   const onDelete=async (id)=>{
-    const api=`https://customerserver-6.onrender.com/api/customers/${id}`
+    const api=`https://customerserver-10.onrender.com/api/customers/${id}`
     const options={
       method:'DELETE'
     }
